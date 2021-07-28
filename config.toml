@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Julian Rubin"
+theme = "hugo_theme_pickles"
