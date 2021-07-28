@@ -29,4 +29,4 @@ jhsdb jmap --binaryheap \
 --core core.<pid>
 ```
 
-Note that `jhsbd jmap` took couple of minutes to run. It is worth to observe size of `dump.hprof` as I interrupted the command twice thinking it hanged.
+Notice that `jhsbd jmap` took couple of minutes to run. It is worth to observe size of `dump.hprof` as I interrupted the command twice thinking it hanged.
