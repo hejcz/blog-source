@@ -30,8 +30,3 @@ jhsdb jmap --binaryheap \
 ```
 
 Note that `jhsbd jmap` took couple of minutes to run. It is worth to observe size of `dump.hprof` as I interrupted the command twice thinking it hanged.
-
-
-jhsdb jstack \
---exe /home/jrubin/.sdkman/candidates/java/current/bin/java \
---core core.52786
