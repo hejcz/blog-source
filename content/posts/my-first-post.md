@@ -3,7 +3,7 @@ title: "TIL: Debugging frozen JVM"
 date: 2021-07-28T07:35:48+02:00
 ---
 
-When`kill -3 <pid>` and `jconsole <pid>` don't work as vm froze it is still possible
+When `kill -3 <pid>` and `jconsole <pid>` don't work as vm froze it is still possible
 to get some info about the process.
 
 ```
