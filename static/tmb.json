@@ -1,0 +1,245 @@
+[
+    [
+        {
+            "title": "Council in Chaos",
+            "lore": "'OUT! GET OUT!' The walls of the Council Chambers shake and do little to muffle the screaming. The doors burst open, and two members of the Gearloc Council are thrown to the street. They offer resistance as the guards lead them at spear-point to the gates. They both turn and make eye contact, sad fearful eye contact, shaking their heads in sadness... or maybe warning. One of them speaks as she exits town, presumably forever.",
+            "choices": [
+                {
+                    "battle": false,
+                    "reward": {
+                        "loot": 3
+                    },
+                    "title": "\"The barracks is unguarded... take this key.\"",
+                    "description": "\"Feels a bit unsettling looting our own barracks.\""
+                },
+                {
+                    "battle": false,
+                    "reward": {
+                        "tpt": 2
+                    },
+                    "title": "\"Meet me at the bend. I can help you.\"",
+                    "description": "If training in Atk, you automatically succeed."
+                }
+            ],
+            "reward": {
+                "ppt": 1
+            }
+        },
+        {
+            "title": "Rumors at the Tipsy Troll Tavern",
+            "lore": "'I've heard things in the south are event worse.' The human is highly opinionated, but it's obvious he is enjoying the lengthy conversation. 'I don't see what threat a bunch of monsters up in the mountains is to live here in town.There's some kind of beast sinking every trade vessel that sails the Sibron. Whole villages are being burned by a huge southern dragon. It's bad. Sure, some of these northern tyrants are scary, but was life in the Deepwood really that great to begin with? Anyway, take this. If you're gonna waste your time, the least I can do is try to keep you alive a little longer'",
+            "choices": [
+                {
+                    "battle": false,
+                    "reward": {},
+                    "title": "Take the gear",
+                    "description": "Party draws a single Trove Loot and automatically unlocks it."
+                },
+                {
+                    "battle": false,
+                    "reward": {
+                        "tpt": 1
+                    },
+                    "title": "Take the signet.",
+                    "description": "\"The Mohlnor trust very few. Their badge will get you into their inner circle\nTreat this card as Loot:\nMohlnorn Crest: While in your possession you may go first in any game of Dangerous Darts. Permanent."
+                }
+            ],
+            "reward": {
+                "ppt": 1,
+                "tpt": 1
+            }
+        },
+        {
+            "title": "Insomnia",
+            "lore": "Sleeping is out of the question. The night before a journey like this, nerves are firing on all cylinders and adrenaline is pumping. And then there's the things you see - or at least think you see - when you wander Obendar in the lonely quiet of night.\nA hooded figure, small in stature, leads a chained creature into the Council Chambers. The beast is making all sorts of guttural noises. Both figures are gone as quickly as they appeared, and at this hour, it feels more like a dream. Maybe it's time to chomp on a snorbin root and get some sleep. ",
+            "choices": [
+                {
+                    "battle": false,
+                    "reward": {
+                        "loot": 1
+                    },
+                    "title": "Follow the creatures.",
+                    "description": "\"We now know what we're in for...\"Persistent. Once during the Tyrant Battle, before the Tyrant rolls its dice prevent it from rolling its Tyrant Die. Discard after use."
+                },
+                {
+                    "battle": false,
+                    "reward": {
+                        "tpt": 1
+                    },
+                    "title": "Hit the hay.",
+                    "description": "\"ZZZZZZZZZZ\""
+                }
+            ],
+            "reward": {
+                "ppt": 1,
+                "tpt": 1
+            }
+        }
+    ],
+    [
+        {
+            "title": "In Defense of Mirawatt and Synchro",
+            "lore": "Legendary engineers with a legendary romance. Mirawatt and Synchro  were what every Searioc couple strove to be for centuries. Beyond their infinite patience and love for each othe, their combined brainpower led to countless technological breakthroughs. including the massive defense systems buried outside of Obendar's walls.\nThe problem? The defenses had never been necessary,  and the means to activate them have been lost to time. But times have changed. Before defenders can even marshal outside the gates, the Ebon have arrived. Taking the time to try activating the ancient defenses might  be difficult, but rushing into battle is always a dangerous proposition.",
+            "choices": [
+                {
+                    "battle": true,
+                    "reward": {
+                        "tpt": 1
+                    },
+                    "title": "Take a few minutes to attempt to activate Obendar's defenses.",
+                    "description": "BQ: Baddie Pts.\nGearlocs may roll only Def Dice in Round 1. Starting in Round 2, Obendar's defenses deal 2 True Dmg to Baddie after it attacks."
+                },
+                {
+                    "battle": true,
+                    "reward": {
+                        "loot": 1
+                    },
+                    "title": "\"Leaping from the parapets the Ebon won't even see us coming\"",
+                    "description": "BQ: Baddie Pts.\nEach Baddie that enters Battle Mat takes 1 True Dmg."
+                }
+            ],
+            "reward": {
+                "ppt": 1,
+                "tpt": 1,
+                "loot": 1
+            }
+        },
+        {
+            "title": "Insult to Injury",
+            "lore": "Three different types of shrieks, each with its own unique ear-splitting obnoxiousness - this is how life outside the gates of Obendar says hello The races that make up the Ebon don't always care for each other. This particular masochist is toying with a young goblin, kobold and orc, educating them on how sharp a dagger can be. Attempting to save their own skins, they point in this direction. Cover blown. It's hard to blame the victimsl they weren't going to escape without some sort of diversion. Thankfully, they stick around to hurl insults while they watch vengeance being served.",
+            "choices": [
+                {
+                    "battle": true,
+                    "reward": {
+                        "loot": 1
+                    },
+                    "title": "Guess there's a peanut gallery...",
+                    "description": "The orc, troll and goblin serve as a helpful distraction. BQ: Baddie Pts. All Baddies have skill: Careless 1 (on bones thrown)."
+                },
+                {
+                    "battle": true,
+                    "reward": {
+                        "tpt": 1
+                    },
+                    "title": "Usher the victims to shelter.",
+                    "description": "BQ: Baddie Pts. No Def Dice may be rolled during Round 1 (Gearlocs or Baddies)."
+                }
+            ],
+            "reward": {
+                "ppt": 1,
+                "tpt": 1,
+                "loot": 1
+            }
+        },
+        {
+            "title": "Honor thy Griffin",
+            "lore": "A dart protrudes from its neck, indicating it has been struck with some sort of sleeping toxin. Otherwise, seeing an honor griffin in such a defenseless position would surely be the setup for a trap. Not that it couldn't be a trap anyway. There's plenty of reason for anything harboring ill intent to camp outside the gates of Obendar in hopes of a quick bit of thievery. All the same, there is an opportunity to get a free couple of strikes on this griffin before it  fights back, or perhaps attempt to hop on and go for a ride to rain down destruction from above.",
+            "choices": [
+                {
+                    "battle": true,
+                    "reward": {
+                        "tpt": 1
+                    },
+                    "title": "Take out the griffin before it comes to!",
+                    "description": "BQ: Baddie Pts, add Honor Griffin (20Pt). Place Honor Griffin on Baddie Melee Starting Position in Lane 1, ignoring adding two enemies effect. Honor Griffin starts with only 3 HP and is stunned for first 2 rounds (use Stun effect Die to show this)."
+                },
+                {
+                    "battle": true,
+                    "reward": {},
+                    "title": "Take the griffin for a joyride!",
+                    "description": "BQ: Baddie Pts. Choose a single Gearloc to gain +2 Dex and the skill: Flight (plade Gearloc Chip Stack on griffin). At the start of Round 5, the Gearloc is thrown from griffin and takes 5 Dmg. Remove griffin from play an leave Gearloc in position."
+                }
+            ],
+            "reward": {
+                "ppt": 1,
+                "tpt": 1,
+                "loot": 1
+            }
+        }
+    ],
+    [
+        {
+            "title": "Casualties of War",
+            "lore": "In times like these, sympathy is in short supply. The various deranged tyrants', well...tyrannical...behavior makes it easy to forget there are creatures who are Ebon only by force or association. These innocent and displaced creatures often wash up on the shores of the Sibron, wounded and in need of help. Today, they offer their raft in hopes this journey ends with a slain tyrant. The raft could be used to cross easily. but it feels like we should return their generosity somehow.",
+            "choices": [
+                {
+                    "battle": false,
+                    "reward": {
+                        "tpt": 1
+                    },
+                    "title": "Take the raft and wish the survivors well.",
+                    "description": "Success. But your well wishes do little to heal their mortal wounds."
+                },
+                {
+                    "battle": true,
+                    "reward": {
+                        "tpt": 2
+                    },
+                    "title": "Offer to escort the wounded to safety.",
+                    "description": "Each Gearloc must place a Baddie (take Baddie from top of any Active Stack) into Loot Area. Treat Baddie as Loot: Wounded subject: Each Gearloc must keep this Baddie in their Loot Area Party reaches 5  total Progress Pts. Heavy."
+                }
+            ],
+            "reward": {
+                "ppt": 1,
+                "loot": 1
+            }
+        },
+        {
+            "title": "The Grass Is Always Greener",
+            "lore": "It appears the Ebon control the bridge today...third time this week. Interesting. The bridgemaster's gruff demeanor is off-putting. He's charging anyone who wants to cross today an arm and a leg, and from the growing pile of severed appendages, his price is non-negotiable. Other options for passage would be preferred. There have always been rumors of a troll living underneath this bridge, though few have chanced an encounter with it. In terms of Gearloc achievements, successfully sneaking across the Sibron underneath a bridge might be the Greatest Of All Time.",
+            "choices": [
+                {
+                    "battle": true,
+                    "reward": {
+                        "tpt": 1,
+                        "loot": 1
+                    },
+                    "title": "Face the Bridgemaster...",
+                    "description": "There are some who call him... Tim. BQ: Baddie Pts. At start of battle, designate Baddie with most HP as the Bridgemaster (place D6 on this unit). Bridgemaster has +1 Atk."
+                },
+                {
+                    "battle": true,
+                    "reward": {},
+                    "title": "See you on the other side!",
+                    "description": "Sneaking down beneath the bridge indeed reveals a troll hideout. BQ: Boddie (replace highest Pt Baddie with a Troll Unit (red club) of same # Pt)."
+                },
+                {
+                    "battle": false,
+                    "reward": {
+                        "tpt": 1
+                    },
+                    "title": "Pay an arm and a leg.",
+                    "description": "\"This seems like a bad idea. Like, really bad\" Persistent. Choose a Gearloc. Skills 3, 4, 7, 8,11,12, 16 and 16 are all unavailanle to that Gearloc for remainder of this adventure, but history books will forever hail you as the \"Legendary Halfling.\""
+                }
+            ],
+            "reward": {
+                "ppt": 1,
+                "tpt": 2
+            }
+        },
+        {
+            "title": "The Wingless Dragon",
+            "lore": "Toothless, missing an eye, and rarely clean, Carnivall, or Carny for short, is one of the more interesting Gearlocs living in Obendar. He's also brilliant, and, perhaps, insane. He's ventured to the banks of the Sibron to build his latest game.. The Wingless Dragon, a catapult to launch passersby over the Sibron—for a small fee, of course. Like most of his games, \"winning\" seems unlikely. Landing safely on the opposite shore seems...impossible. But who knows? He swears it's safe or our money back, and his child-like smile hints that it might be fun.",
+            "choices": [
+                {
+                    "battle": false,
+                    "reward": {
+                        "loot": 1
+                    },
+                    "title": "Catapults and small fragile creatures? Really?",
+                    "description": "Place a stack of 3 Health Chips on Baddie Melee Position 4 and Baddie Ranged Position 2. Each Gearloc In party will make an attempt to literally slide or flick an Atk Die between these 2 stacks, starting from Gearloc Ranged Position 3. Atk Die must travel far enough to be completely between Chip Stacks or beyond them for success (you may hit Chip Stacks In the process). Each Gearloc may make 2 practice attempts. Any Gearloc that comes up short begins the next battle with -1 HP. Encounter success is achieved no matter the outcome."
+                },
+                {
+                    "battle": false,
+                    "reward": {},
+                    "title": "\"There's no time for silly flinging games.\"",
+                    "description": "Carnivall mocks your lack of bravery as you walk casually across the bridge. You feel intense regret. Encounter success is achieved no matter the outcome."
+                }
+            ],
+            "reward": {
+                "ppt": 1,
+                "tpt": 2
+            }
+        }
+    ]
+]
