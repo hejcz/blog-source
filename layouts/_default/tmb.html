@@ -1,0 +1,106 @@
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL | sanitizeurl }}
+<article class="p-article">
+  <header>
+    <h1>{{ .Title }}</h1>
+    <div>
+      {{ range .Params.tags }}
+      <a href="{{ $baseurl }}/tags/{{ . | urlize }}" class="c-tag">{{ . }}</a>
+      {{ end }}
+    </div>
+  </header>
+  {{ with .Params.thumbnail }}
+  <img src="{{ . }}" alt="thumbnail" class="p-article__thumbnail">
+  {{ end }}
+  <section id="js-article" class="p-article__body">
+    <button id="draw-day1" style="padding: 1em; font-size: 1.5em;">Draw day 1 card</button>
+    <button id="draw-day2" style="margin-left: 1em; padding: 1em; font-size: 1.5em;">Draw day 2 card</button>
+    <button id="draw-day3" style="margin-left: 1em; padding: 1em; font-size: 1.5em;">Draw day 3 card</button>
+    <div id="selected-card"></div>
+    <script>
+      const days = [
+        [
+          {
+            "title": "Council in Chaos",
+            "lore": "'OUT! GET OUT!' The walls of the Council Chambers shake and do little to muffle the screaming. The doors burst open, and two members of the Gearloc Council are thrown to the street. They offer resistance as the guards lead them at spear-point to the gates. They both turn and make eye contact, sad fearful eye contact, shaking their heads in sadness... or maybe warning. One of them speaks as she exits town, presumably forever.",
+            "choices": [
+              {
+                "battle": false,
+                "reward": { "loot": 3 },
+                "title": "\"The barracks is unguarded... take this key.\"",
+                "description": `"Feels a bit unsettling looting our own barracks."`
+              },
+              {
+                "battle": false,
+                "reward": { "tpt": 2 },
+                "title": "\"Meet me at the bend. I can help you.\"",
+                "description": `If training in Atk, you automatically succeed.`
+              }
+            ],
+            "reward": { "ppt": 1 }
+          },
+          {
+            "title": "Rumors at the Tipsy Troll Tavern",
+            "lore": "'I've heard things in the south are event worse.' The human is highly opinionated, but it's obvious he is enjoying the lengthy conversation. 'I don't see what threat a bunch of monsters up in the mountains is to live here in town.There's some kind of beast sinking every trade vessel that sails the Sibron. Whole villages are being burned by a huge southern dragon. It's bad. Sure, some of these northern tyrants are scary, but was life in the Deepwood really that great to begin with? Anyway, take this. If you're gonna waste your time, the least I can do is try to keep you alive a little longer'",
+            "choices": [
+              {
+                "battle": false,
+                "reward": {},
+                "title": "Take the gear",
+                "description": `Party draws a single Trove Loot and automatically unlocks it.`
+              },
+              {
+                "battle": false,
+                "reward": { "tpt": 1 },
+                "title": "Take the signet.",
+                "description": `"The Mohlnor trust very few. Their badge will get you into their inner circle"
+Treat this card as Loot:
+Mohlnorn Crest: While in your possession you may go first in any game of Dangerous Darts. Permanent.`
+              }
+            ],
+            "reward": { "ppt": 1, "tpt": 1 }
+          }
+        ]
+      ];
+
+      document.getElementById("draw-day1").onclick = function (e) {
+        function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+        }
+
+        const day = days[0][getRandomInt(0, days[0].length)];
+
+        function formatReward(reward) {
+          return Object.entries(reward).map(([what, amount]) => {
+            switch (what) {
+              case "tpt": return amount == 1 ? "1 Training Point" : amount + " Training Points";
+              case "loot": return "Each Gearloc draws " + amount + " loot";
+              case "ppt": return amount == 1 ? "1 Progress Point" : amount + " Progress Points";
+            }
+          }).join(", ") + ".";
+        }
+
+        let choicesHtml = "";
+        for (const c of day.choices) {
+          choicesHtml += "<h3>" + c.title + "</h3>";
+          choicesHtml += "<p>" + (c.battle ? "Battle" : "No battle") + "</p>";
+          choicesHtml += "<p>" + c.description + "</p>";
+          choicesHtml += "<p>";
+          const rewards = formatReward(c.reward);
+          choicesHtml += "Choice reward: " + rewards;
+          choicesHtml += "</p>";
+        }
+        document.getElementById("selected-card").innerHTML = `
+        <h2>${day.title}</h2>
+        <p><i>${day.lore}</i></p>
+        ${choicesHtml}
+        <h3>Additional rewards:</h3>
+        <p>${formatReward(day.reward)}</p>
+        `;
+      };
+    </script>
+  </section>
+</article>
+{{ partial "footer.html" . }}
