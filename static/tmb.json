@@ -1,6 +1,31 @@
 [
     [
         {
+            "title": "Leaving Obendar",
+            "lore": "Only 12 hours 'til dawn and the send-off ceremony that will no doubt change the lives of every remaining Gearloc (and likely every life in Daelore). Weapons and supplies are ready to go, but the night is young and adrenaline fills the veins. It's clear no sleep will be had tonight. There's sure to be some shady peddlers in dark alleys ready to deal in loot. The again, some last-minute training could pay a nice dividend by morning. So, what to do... what to do... ?",
+            "choices": [
+                {
+                    "battle": false,
+                    "reward": {
+                        "tps": 2
+                    },
+                    "title": "Squeeze in some last minute self-improvement.",
+                    "description": ""
+                },
+                {
+                    "battle": false,
+                    "reward": {
+                        "tpt": 1
+                    },
+                    "title": "Shake down a shady peddler!",
+                    "description": "Each Gearloc in party may draw 2 Loot and choose 1 to keep."
+                }
+            ],
+            "reward": {
+                "ppt": 1
+            }
+        },
+        {
             "title": "Council in Chaos",
             "lore": "'OUT! GET OUT!' The walls of the Council Chambers shake and do little to muffle the screaming. The doors burst open, and two members of the Gearloc Council are thrown to the street. They offer resistance as the guards lead them at spear-point to the gates. They both turn and make eye contact, sad fearful eye contact, shaking their heads in sadness... or maybe warning. One of them speaks as she exits town, presumably forever.",
             "choices": [
@@ -77,6 +102,31 @@
         }
     ],
     [
+        {
+            "title": "Hardly Out the Gate",
+            "lore": "15 steps into the journey... 15 steps! ... and already a Gearloc boot is struck through by an arrow. Luckily, no toes were killed. Teeth are clenched and a painful tug is made while looking around in embarrassement. Yeaow!!!! Now, sufficiently ticked, it's time to return the favor to the ominous figures at the edge of the woods. A commotion breaks out atop the city wall, interrupting all thoughts. Guards have now spotted the brazen intruders and are notching their arrows. Their help is at the ready. Like it or not, this adventure is underway.",
+            "choices": [
+                {
+                    "battle": true,
+                    "reward": {},
+                    "title": "Hail the guards for help.",
+                    "description": "BQ: Baddie Pts.\nAt the start of each round arrows from the wall deal 1 True Dmg to each Baddie.\n *Recommended for first time adventurers. After either choice, if battle is lost, place this Encounter back on the top of your Encounter deck"
+                },
+                {
+                    "battle": true,
+                    "reward": {
+                        "tpt": 1
+                    },
+                    "title": "It's time to show Obendar what Gearlocs are made of.",
+                    "description": "With Obendar watching, you feel an extra shot of adrenaline as you prepare for an unassisted battle.\nBQ: Baddie Pts.\n After either choice, if battle is lost, place this Encounter back on the top of your Encounter deck."
+                }
+            ],
+            "reward": {
+                "ppt": 1,
+                "tpt": 1,
+                "loot": 1
+            }
+        },
         {
             "title": "In Defense of Mirawatt and Synchro",
             "lore": "Legendary engineers with a legendary romance. Mirawatt and Synchro  were what every Searioc couple strove to be for centuries. Beyond their infinite patience and love for each othe, their combined brainpower led to countless technological breakthroughs. including the massive defense systems buried outside of Obendar's walls.\nThe problem? The defenses had never been necessary,  and the means to activate them have been lost to time. But times have changed. Before defenders can even marshal outside the gates, the Ebon have arrived. Taking the time to try activating the ancient defenses might  be difficult, but rushing into battle is always a dangerous proposition.",
@@ -158,6 +208,32 @@
         }
     ],
     [
+        {
+            "title": "Crossing the Sibron",
+            "lore": "The Sibron River; a glistening vein of trade running the length of Daelore, playfully beckons as it shimmers in the daylight up ahead. But with so few bridges in these parts, this crossing is an abvious spot for enemy scouts and traps. A journey of this importance leaves only two options. Tucking the ears and trying to blend in is risky but efficient. A boat at dusk carries less chance of discovery but requires business with the Mohlnor - a trading syndicate with their own set of... drawbacks.",
+            "choices": [
+                {
+                    "battle": false,
+                    "reward": {
+                        "tpt": 1,
+                        "ppt": 1
+                    },
+                    "title": "Tuck your ears and walk like a commoner.",
+                    "description": "Roll a D6 for each Gearloc in party. On any 1-2: Your party is spotted. Find the first Tyrant Encounter in your deck and place it on top. Shuffle remaining cards and keep them underneath. Encounter success is achieved no matter the outcome."
+                },
+                {
+                    "battle": false,
+                    "reward": {
+                        "trove": 1
+                    },
+                    "title": "Hire the Mohlnor.",
+                    "description": "The Mohlnor are suprisingly easy to work with. Not only do they drop us safely on the east bank of the river under the cover of darkness, they also offer a Trove Loot \"gift.\" Maybe our success is good for business? Shuffle Special Encounter - Mohlnor Traders into your Encounter Deck."
+                }
+            ],
+            "reward": {
+                "ppt": 1
+            }
+        },
         {
             "title": "Casualties of War",
             "lore": "In times like these, sympathy is in short supply. The various deranged tyrants', well...tyrannical...behavior makes it easy to forget there are creatures who are Ebon only by force or association. These innocent and displaced creatures often wash up on the shores of the Sibron, wounded and in need of help. Today, they offer their raft in hopes this journey ends with a slain tyrant. The raft could be used to cross easily. but it feels like we should return their generosity somehow.",
